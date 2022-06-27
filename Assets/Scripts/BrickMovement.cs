@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class BrickMovement:MonoBehaviour {
 
-    public bool movable = true;
+    public Vector3 centerOffset;
+
     GameObject[] bricks = new GameObject[4];
     Camera main;
-    float movementOffset;
-    int rotation, height, width;
+
+    public bool movable = true;
+    int width = 12;
 
     IEnumerator Start() {
         main = Camera.main;
@@ -41,12 +43,10 @@ public class BrickMovement:MonoBehaviour {
 
         if(Input.GetKeyDown(KeyCode.LeftArrow)) {
             transform.position -= main.transform.right;
-            CheckWalls();
         }
 
         if(Input.GetKeyDown(KeyCode.RightArrow)) {
             transform.position += main.transform.right;
-            CheckWalls();
         }
 
         CheckWalls();
@@ -56,19 +56,26 @@ public class BrickMovement:MonoBehaviour {
         foreach(GameObject brick in bricks) {
             if(brick.transform.position.x <= 0)
                 transform.position += main.transform.right;
+
+            if(brick.transform.position.x >= width)
+                transform.position -= main.transform.right;
+
         }
     }
 
     void RotateBrick() {
-        rotation += 90;
-        if(rotation == 180)
-            rotation = -rotation;
-
-        transform.rotation = Quaternion.Euler(0, 0, rotation);
+        transform.RotateAround(transform.TransformPoint(centerOffset), Vector3.forward, 90);
     }
+
     void RockBottom() {
         movable = false;
         for(int i = 0; i < 4; i++) {
+            foreach(GameObject brick in bricks) {
+                if(brick.transform.position.y <= -1) {
+                    transform.position += main.transform.up;
+                }
+            }
+
             bricks[i].transform.parent = GameObject.Find("PlayerMap").transform;
             bricks[i].GetComponent<Bricks>().enabled = true;
         }

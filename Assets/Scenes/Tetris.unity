@@ -568,7 +568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5634285209006596524, guid: 9f5c960bf7e28b448800e92e3317c983, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 14.5
       objectReference: {fileID: 0}
     - target: {fileID: 5634285209006596524, guid: 9f5c960bf7e28b448800e92e3317c983, type: 3}
       propertyPath: m_LocalPosition.z
@@ -608,7 +608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8100175976704230090, guid: 9f5c960bf7e28b448800e92e3317c983, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5c960bf7e28b448800e92e3317c983, type: 3}
@@ -980,7 +980,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 591391548295939401, guid: 5907907eda1a8fa4a812efe2c118c911, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951819582126550481, guid: 5907907eda1a8fa4a812efe2c118c911, type: 3}
+      propertyPath: centerOffset.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2181979824598995450, guid: 5907907eda1a8fa4a812efe2c118c911, type: 3}
       propertyPath: m_RootOrder
@@ -988,11 +992,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2181979824598995450, guid: 5907907eda1a8fa4a812efe2c118c911, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2181979824598995450, guid: 5907907eda1a8fa4a812efe2c118c911, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.5
+      value: 15.5
       objectReference: {fileID: 0}
     - target: {fileID: 2181979824598995450, guid: 5907907eda1a8fa4a812efe2c118c911, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1229,6 +1233,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5501568670051060166, guid: c6a004a9cddbd8644846a7d7c95fc911, type: 3}
+      propertyPath: centerOffset.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501568670051060166, guid: c6a004a9cddbd8644846a7d7c95fc911, type: 3}
+      propertyPath: centerOffset.y
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7291815666843873308, guid: c6a004a9cddbd8644846a7d7c95fc911, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1239,7 +1251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7291815666843873308, guid: c6a004a9cddbd8644846a7d7c95fc911, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.5
+      value: 16.5
       objectReference: {fileID: 0}
     - target: {fileID: 7291815666843873308, guid: c6a004a9cddbd8644846a7d7c95fc911, type: 3}
       propertyPath: m_LocalPosition.z
