@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1634074164123021188}
   - component: {fileID: 2269514004411705254}
+  - component: {fileID: 5806503942891116867}
   m_Layer: 0
   m_Name: TetrisBlock (1)
   m_TagString: Untagged
@@ -82,6 +83,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5806503942891116867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652994056864902402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf41dc16582f3944a1c3a0a7ca083c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveable: 0
 --- !u!1 &1208465427885393780
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 41198503974018225}
   - component: {fileID: 611949064074226354}
+  - component: {fileID: 8344150236295832030}
   m_Layer: 0
   m_Name: TetrisBlock (2)
   m_TagString: Untagged
@@ -164,6 +179,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8344150236295832030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208465427885393780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf41dc16582f3944a1c3a0a7ca083c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveable: 0
 --- !u!1 &1719324610750510803
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,6 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1133229135690396829}
   - component: {fileID: 7277731789272328354}
+  - component: {fileID: 2821032591307974028}
   m_Layer: 0
   m_Name: TetrisBlock
   m_TagString: Untagged
@@ -246,6 +275,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2821032591307974028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719324610750510803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf41dc16582f3944a1c3a0a7ca083c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveable: 0
 --- !u!1 &7685485902233702085
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1174378278057726227}
   - component: {fileID: 8625848663245986877}
+  - component: {fileID: 3765485757699162770}
   m_Layer: 0
   m_Name: TetrisBlock (3)
   m_TagString: Untagged
@@ -328,6 +371,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3765485757699162770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7685485902233702085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf41dc16582f3944a1c3a0a7ca083c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveable: 0
 --- !u!1 &9042520980919930743
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9042520980919930742}
+  - component: {fileID: 6277245307263200613}
   m_Layer: 0
   m_Name: ZBlock
   m_TagString: Untagged
@@ -362,3 +419,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6277245307263200613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042520980919930743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6540344f864b74d8f6a4c22c8a207f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerOffset: {x: 0, y: 0, z: 0}
+  movable: 1

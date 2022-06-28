@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf6540344f864b74d8f6a4c22c8a207f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  centerOffset: {x: -0.5, y: 1.5, z: 0}
   movable: 1
 --- !u!1 &2168103816021777560
 GameObject:
